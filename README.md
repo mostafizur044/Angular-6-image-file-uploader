@@ -8,18 +8,18 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Inputs
 
-multi: true/false
-width: image width fore preview (optional)
-height: height of image div 
-url: Upload url
-fileName: file name by default 'file' - single 'file[]' - multi 
-info: sending data with image
-accept: which type of file to upload, ex: image type/excel or csv type
-limit: image/file size limit 
+`multi`: true/false;  
+`width`: image width fore preview (optional);  
+`height`: height of image div (optional);  
+`url`: Upload url;  
+`fileName`: file name by default 'file' - single 'file[]' - multi;  
+`info`: sending data with image;  
+`accept`: which type of file to upload, ex: image type/excel or csv type;  
+`limit`: image/file size limit defualt 2 MB (optional);  
 
 ## Output
 
-upload: event will call after uploading to get the response
+`upload`: event will call after uploading to get the response
 
 ## Note 
 
