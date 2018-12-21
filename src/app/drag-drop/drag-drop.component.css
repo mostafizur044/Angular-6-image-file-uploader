@@ -1,0 +1,134 @@
+
+.drop {
+    width: 100%;
+    padding: 10px;
+    min-height: 150px;
+    border: 2px dashed #DADFE3;
+    overflow: hidden;
+    text-align: center;
+    background: white;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    margin: 0px;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .drop .cont {
+    padding-top: 10px;
+    width: 100%;
+    color: #8E99A5;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .drop .cont i {
+    font-size: 150px;
+    color: #efefef;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left:30%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .drop .cont .tit {
+    font-size: 150%;
+  }
+  .drop .cont .desc {
+    color: #A4AEBB;
+  }
+  .drop .cont .tit, .drop .cont .desc{
+      position: relative;
+      top: 30%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .drop input {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: red;
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .progress{
+    margin: 10px 0px;
+  }
+
+  .upload-btn button{
+    margin-bottom: 10px;
+  }
+
+  .previewImage{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    width: 90px;
+    padding:5px;
+    height: 80px;
+    border: 1px solid #ccc;
+}
+
+.previewImage .overlay{
+  position: absolute;  
+  display: none;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  justify-content: center;
+  top: 0;
+}
+
+.previewImage:hover .overlay{
+  display: flex;
+}
+
+
+.remove-btn {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+  
+  .dropHover{
+      background-size: 30px 30px;
+      background-image: -webkit-linear-gradient(135deg, #F6F6F6 25%, transparent 25%, transparent 50%, #F6F6F6 50%, #F6F6F6 75%, transparent 75%, transparent);
+      background-image: linear-gradient(-45deg, #F6F6F6 25%, transparent 25%, transparent 50%, #F6F6F6 50%, #F6F6F6 75%, transparent 75%, transparent);
+      -webkit-animation: stripes 2s linear infinite;
+      animation: stripes 2s linear infinite; 
+  }
+  
+  @-webkit-keyframes stripes {
+    from {
+      background-position: 0 0; }
+    to {
+      background-position: 60px 30px; } }
+  
+  @keyframes stripes {
+    from {
+      background-position: 0 0; }
+    to {
+      background-position: 60px 30px; } }
+  
