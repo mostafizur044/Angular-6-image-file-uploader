@@ -24,7 +24,13 @@ export class DragDropDirective implements AfterViewInit, OnDestroy {
       this.render.removeClass(this.el.nativeElement, 'dropHover');
     });
 
-    this.input = this.render.selectRootElement('#images');
+    for(const d of this.el.nativeElement.children) {
+      if(d.id === 'images') {
+        this.input = d;
+        break;
+      }
+    }
+
     this.events[2] = this.render.listen(this.input, 'dragenter', () => {
       this.render.addClass(this.el.nativeElement, 'dropHover');
       this.render.setStyle(this.el.nativeElement, 'border-color', '#398bf7');
